@@ -36,6 +36,7 @@ class UtilsTest extends FlatSpec with Matchers{
     list_info(2) should be ("/shuttle/missions/sts-70/mission-sts-70.html")
     list_info(3) should be ("200")
     list_info(4) should be ("0")
+    list_info(5) should be ("HEAD ")
   }
 
 }
