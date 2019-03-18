@@ -1,0 +1,77 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\cloudxprojects_2.11-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry_sql$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry_sql$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry_sql.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry_sql.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$16.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$16.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry_sql$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry_sql$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$12.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$12.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NASA_access_log_Aug95.gz[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\NASA_access_log_Aug95.gz[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$15.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$15.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\Utils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\Utils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$14.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$14.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry_sql$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry_sql$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$main$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$main$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$18.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$18.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry_sql$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry_sql$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$11.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$11.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$13.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$13.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\alok\projects\entry$$anonfun$17.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\1. Personal\Scala\CloudxProjects\target\scala-2.11\classes\com\alok\projects\entry$$anonfun$17.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
