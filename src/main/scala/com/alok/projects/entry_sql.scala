@@ -1,8 +1,9 @@
 package com.alok.projects
 
 import org.apache.spark.sql.functions.substring
-import org.apache.spark.sql.types.{StringType, StructField, StructType}
-import org.apache.spark.sql.{DataFrame, Row, SparkSession}
+import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
+import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
+import org.apache.spark.sql.functions._
 
 object entry_sql{
   val spark = SparkSession
@@ -10,45 +11,39 @@ object entry_sql{
     .appName("Analyze Logger")
     .config("spark.master","local")
     .getOrCreate()
-
+  spark.sparkContext.setLogLevel("ERROR")
   import spark.implicits._
 
   def main(args: Array[String]): Unit = {
-    val path = args(0)
+    //val path = args(0)
     //val path = "src/main/resources/NASA_access_log_Aug95.gz"
-    logAnalysis(path)
-
+    //logAnalysis(path)
+    logAnalysis("src/main/resources/NASA_access_log_Aug95.gz")
   }
 
-  def logAnalysis(path:String):Unit ={
+  def logAnalysis(path:String):Unit = {
     val (columns, logdf) = read(path)
-    //1. Top 10 URLs
-    val top10URL = top10RequestedUrls(logdf)
+    val logSummaryDataSet = logSummaryTyped(logdf)
+    // 1. Top 10 URLs
     println("----------------Top 10 URLS--------------------")
-    top10URL.show()
-
+    top10RequestedUrls(logSummaryDataSet)
     //2. Top 5 hosts
-    val top5hosts = top5hostslogged(logdf)
     println("----------------Top 5 hosts--------------------")
-    top5hosts.show()
-
+    top5hostslogged(logSummaryDataSet)
     //3. Top 5 days of traffic
-    val top5days = top5TrafficDays(logdf)
-    println("----------------Top 5 days--------------------")
-    top5days.show()
+    println("----------------Top 5 traffic days--------------------")
+    top5TrafficDays(logSummaryDataSet)
 
     //4. Least 5 days of traffic
-    val least5days = least5TrafficDays(logdf)
-    println("----------------Top 5 days--------------------")
-    least5days.show()
+    println("----------------Least 5 traffic days--------------------")
+    least5TrafficDays(logSummaryDataSet)
 
     //5. Top 5 return codes
-    val top5Codes = top5HtmlCodes(logdf)
-    println("----------------Top 5 codes--------------------")
-    top5Codes.show()
-
-    println(logdf.select($"ReqType").distinct())
+    println("----------------Least 5 html codes--------------------")
+    top5HtmlCodes(logSummaryDataSet)
   }
+
+
   def read(path:String):(List[String],DataFrame) = {
 
     val rdd = spark.sparkContext.textFile(path)
@@ -80,29 +75,70 @@ object entry_sql{
     val x = List(line(0),line(1),line(2),line(3),line(4),line(5))
     Row.fromSeq(x)
   }
-  def top10RequestedUrls(df:DataFrame): DataFrame ={
-    df.filter($"ReqType" === "GET").groupBy("URL").count().orderBy($"count".desc).limit(10)
-  }
-  def top5hostslogged(df:DataFrame): DataFrame ={
-    df.groupBy("host").count().orderBy($"count".desc).limit(5)
-  }
-  def top5TrafficDays(df:DataFrame): DataFrame ={
-    df.select($"Time",substring($"Time",0,6).as("Day"))
-      .groupBy($"Day")
-      .count()
-      .orderBy($"count".desc)
-      .limit(5)
 
+  def logSummaryTyped(logSummaryDF: DataFrame): Dataset[logs] = {
+    logSummaryDF.map(r => logs(
+      r.getAs[String]("Host"),
+      r.getAs[String]("Time"),
+      r.getAs[String]("URL"),
+      r.getAs[String]("Retcode"),
+      r.getAs[String]("numberbytesTransferred"),
+      r.getAs[String]("ReqType")
+    ))
   }
-  def least5TrafficDays(df:DataFrame): DataFrame ={
-    df.select($"Time",substring($"Time",0,6).as("Day"))
-      .groupBy($"Day")
-      .count()
-      .orderBy($"count")
-      .limit(5)
 
+  def top10RequestedUrls(logDataSet: Dataset[logs]): Unit ={
+    logDataSet.where($"reqtype" === "GET").
+      groupBy($"url").
+      agg(count($"url")).
+      as("Count_Requests").
+      orderBy($"count(url)".desc).
+      show(10)
   }
-  def top5HtmlCodes(df:DataFrame):DataFrame = {
-    df.groupBy($"Retcode").count().orderBy($"count".desc).limit(5)
+
+  def top5hostslogged(logDataSet: Dataset[logs]): Unit ={
+    logDataSet.
+      groupBy($"host").
+      agg(count($"host")).
+      as("no_hosts").
+      orderBy($"count(host)".desc).
+      show(10)
   }
+
+  def top5TrafficDays(logDataSet: Dataset[logs]): Unit ={
+    logDataSet.
+      select($"time",substring($"time",0,6).as("Day")).
+      groupBy($"Day").
+      agg(count($"Day")).
+      orderBy($"count(Day)".desc).
+      show(5)
+  }
+
+  def least5TrafficDays(logDataSet: Dataset[logs]): Unit ={
+    logDataSet.
+      select($"time",substring($"time",0,6).as("Day")).
+      groupBy($"Day").
+      agg(count($"Day")).
+      orderBy($"count(Day)").
+      show(5)
+  }
+
+  def top5HtmlCodes(logDataSet: Dataset[logs]): Unit ={
+    logDataSet.
+      groupBy($"retcode").
+      agg(count($"retcode")).
+      as("count_retcodes").
+      orderBy($"count(retcode)".desc).
+      show(5)
+  }
+
 }
+
+case class logs (
+  host: String,
+  time: String,
+  url:  String,
+  retcode: String,
+  bytes  : String,
+  reqtype: String
+                )
